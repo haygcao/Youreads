@@ -1,40 +1,4 @@
-/*
-软件名称:我的网红店 (越狱可多开)
-更新时间：2021-05-06 @肥皂
-脚本说明：我的网红店自动领取。
 
-第一天可以提现一共九块钱。秒到。第二天18。第三天20。其他额度我是提现失败。不清楚了。视频数据数据是和食材大冲关三兄弟通用的。所以先把食材大冲关三兄弟的视频重写禁用。否则冲突。
-
-我的网红店使用方法:
-1-进入游戏绑定微信先提现三毛。
-2-点击红包领取，看视频获得视频数据。领红包获得红包数据。
-
-慢点运行。间隔久一点。。。。也不要一天到晚运行。
-本脚本以学习为主
-
-TG通知群:https://t.me/Ariszy_Scripts
-TG电报交流群: https://t.me/hahaha8028
-
-boxjs地址 :  
-
-https://raw.githubusercontent.com/age174/-/main/feizao.box.json
-
-我的网红店
-圈X配置如下，其他软件自行测试
-[task_local]
-#我的网红店
-0-59 9-14 * * * https://raw.githubusercontent.com/age174/-/main/wdwhd.js, tag=我的网红店, img-url=https://ae01.alicdn.com/kf/Uc5a0618d6a404079af9216e1012e35efs.jpg, enabled=true
-
-[rewrite_local]
-#我的网红店视频
-https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/ url script-request-body https://raw.githubusercontent.com/age174/-/main/wdwhd.js
-#我的网红店红包
-https://tinygame-api.beijingqianji.com/en/check/imp_callback url script-request-body https://raw.githubusercontent.com/age174/-/main/wdwhd.js
-
-[MITM]
-hostname = tinygame-api.beijingqianji.com,api-access.pangolin-sdk-toutiao.com
-
-*/
 const $ = new Env('我的网红店');
 let status;
 status = (status = ($.getval("wdwhdstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
