@@ -11,32 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-          SQ_shuqiuserURL: ${{ secrets.SQ_SHUQIUSERURL }}
-          SQ_shuqisyURL: ${{ secrets.SQ_SHUQISYURL }}
-          SQ_shuqisyBODY: ${{ secrets.SQ_SHUQISYBODY }}
-          SQ_shuqispBODY: ${{ secrets.SQ_SHUQISPBODY }}
-          SQ_shuqiscBODY: ${{ secrets.SQ_SHUQISCBODY }}
-          SQ_shuqiydBODY: ${{ secrets.SQ_SHUQIYDBODY }}
-          SQ_shuqiqdBODY: ${{ secrets.SQ_SHUQIQDBODY }}
-          SQ_shuqirwBODY: ${{ secrets.SQ_shuqiRWBODY }}
-          SQ_shuqifxBODY: ${{ secrets.SQ_SHUQIFXBODY }}
-          SQ_shuqisprwURL: ${{ secrets.SQ_SHUQISPRWURL }}
-          SQ_shuqijlBODY: ${{ secrets.SQ_SHUQIJLBODY }}
-          SQ_shuqisqjlBODY: ${{ secrets.SQ_SHUQISQJLBODY }}
-          SQ_shuqicjyURL: ${{ secrets.SQ_SHUQICJYURL }}
-          SQ_shuqicjcsBODY: ${{ secrets.SQ_SHUQICJCSBODY }}
-          SQ_shuqicjBODY: ${{ secrets.SQ_SHUQICJBODY }}
-          SQ_shuqijsspBODY: ${{ secrets.SQ_SHUQIJSSPBODY }}
-          SQ_shuqijsydURL: ${{ secrets.SQ_SHUQIJSYDURL }}
-          SQ_shuqijsydBODY: ${{ secrets.SQ_SHUQIJSYDBODY }}
-          SQ_shuqijsqdBODY: ${{ secrets.SQ_SHUQIJSQDBODY }}
-          SQ_shuqijsqdspyURL: ${{ secrets.SQ_SHUQIJSQDSPYURL }}
-          SQ_shuqijsqdspBODY: ${{ secrets.SQ_SHUQIJSQDSPBODY }}
-          SQ_shuqijsrwBODY: ${{ secrets.SQ_SHUQIJSRWBODY }}
-          SQ_shuqijsfxBODY: ${{ secrets.SQ_SHUQIJSFXBODY }}
-          SQ_shuqijsbookURL: ${{ secrets.SQ_SHUQIJSBOOKURL }}
-          SQ_shuqijsbookBODY: ${{ secrets.SQ_SHUQIJSBOOKBODY }}
-          SQ_shuqijssprwURL: ${{ secrets.SQ_SHUQIJSSPRWURL }}
+          
           TZ: Asia/shanghai
         
     steps:
